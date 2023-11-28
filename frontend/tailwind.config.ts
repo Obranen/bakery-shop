@@ -9,13 +9,12 @@ const config: Config = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
-      }
-    }
+    colors: {
+      myDefaultLight: '#fcfcfc',
+      myPrimaryLight: '#f5efe6',
+      mySecondaryLight: '#000000',
+      myHighlightLight: '#e05810',
+    },
   },
   darkMode: 'class',
   plugins: [
@@ -23,27 +22,27 @@ const config: Config = {
       themes: {
         light: {
           colors: {
-            background: 'white', // or DEFAULT
-            foreground: 'black', // or 50 to 900 DEFAULT
+            background: '#fcfcfc',
+            foreground: '#000000',
+            default: {
+              foreground: '#fcfcfc',
+              DEFAULT: '#e05810',
+            },
             primary: {
-              //… 50 to 900
-              foreground: 'white',
-              DEFAULT: 'black'
+              foreground: '#fcfcfc',
+              DEFAULT: '#000000',
             }
-            // … rest of the colors
           }
         },
         dark: {
           colors: {
-            background: 'black', // or DEFAULT
-            foreground: 'white', // or 50 to 900 DEFAULT
+            background: 'black',
+            foreground: 'white',
             primary: {
-              //… 50 to 900
-              foreground: 'black',
-              DEFAULT: 'white'
+              DEFAULT: 'white',
+              foreground: 'black'
             }
           }
-          // … rest of the colors
         }
       }
     })
