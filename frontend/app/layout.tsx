@@ -2,7 +2,9 @@ import type {Metadata} from 'next'
 import {Abril_Fatface, Roboto, Caveat, Roboto_Serif} from 'next/font/google'
 import './globals.css'
 import Provider from '@/lib/Provider'
-import {ReactNode} from 'react'
+import React, {ReactNode} from 'react'
+import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header'
 
 const abrilFatface = Abril_Fatface({
   subsets: ['latin'],
@@ -34,9 +36,11 @@ export default function RootLayout({children}: { children: ReactNode }) {
     <html lang="en">
     <body className={`${robotoSerif.className} ${abrilFatface.className} ${roboto.className} ${caveat.className}`}>
     <Provider>
-      {/*<header><Header/></header>*/}
-      <main>{children}</main>
-      {/*<footer><Footer/></footer>*/}
+      <div className={'body'}>
+        <header><Header/></header>
+        <main>{children}</main>
+        <footer><Footer/></footer>
+      </div>
     </Provider>
     </body>
     </html>

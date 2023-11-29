@@ -14,6 +14,11 @@ const config: Config = {
       myPrimaryLight: '#f5efe6',
       mySecondaryLight: '#000000',
       myHighlightLight: '#e05810',
+
+      myDefaultDark: '#fcfcfc',
+      myPrimaryDark: '#f5efe6',
+      mySecondaryDark: '#000000',
+      myHighlightDark: '#e05810',
     },
   },
   darkMode: 'class',

@@ -15,15 +15,16 @@ export default function Home() {
 
   if (!mounted) return null
   return (
-    // <main className={'bg-bgPrimaryLight dark:bg-bgPrimaryDark'}>
-    <main className={styles.my}>
-      <div>The current theme is: {theme}</div>
-      <Button onClick={() => setTheme('light')}>
-        Light Mode
-      </Button>
-      <Button onClick={() => setTheme('dark')} variant={'bordered'}>
-        Dark Mode
-      </Button>
-    </main>
+    <div className={''}>
+      <div className={styles.my}>
+        <div>The current theme is: {theme}</div>
+        <Button onClick={() => setTheme('light')}>
+          Light Mode
+        </Button>
+        <Button onClick={() => setTheme('dark')} variant={'bordered'}>
+          Dark Mode
+        </Button>
+      </div>
+    </div>
   )
 }
