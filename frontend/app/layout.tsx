@@ -37,7 +37,7 @@ export default function RootLayout({children}: { children: ReactNode }) {
     <body className={`${robotoSerif.className} ${abrilFatface.className} ${roboto.className} ${caveat.className}`}>
     <Provider>
       <div className={'body'}>
-        <header><Header/></header>
+        <Header/>
         <main>{children}</main>
         <footer><Footer/></footer>
       </div>
