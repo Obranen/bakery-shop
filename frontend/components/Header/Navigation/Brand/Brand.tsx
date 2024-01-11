@@ -1,8 +1,10 @@
+import Link from 'next/link'
+
 const Brand = () => {
   return (
     <>
       {/*<AcmeLogo />*/}
-      <p className="font-bold text-inherit">Bakery</p>
+      <Link className="font-bold text-inherit" href="/">Bakery</Link>
     </>
   )
 }

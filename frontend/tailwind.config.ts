@@ -29,14 +29,14 @@ const config: Config = {
           colors: {
             background: '#fcfcfc',
             foreground: '#000000',
-            default: {
-              foreground: '#fcfcfc',
-              DEFAULT: '#e05810',
-            },
             primary: {
               foreground: '#fcfcfc',
               DEFAULT: '#000000',
-            }
+            },
+            secondary: {
+              foreground: '#fcfcfc',
+              DEFAULT: '#e05810',
+            },
           }
         },
         dark: {

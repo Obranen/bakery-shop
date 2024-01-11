@@ -1,8 +1,0 @@
-:global(.light) .my {
-  /*@apply bg-bgPrimaryLight*/
-  /*@apply bg-vf*/
-}
-
-:global(.dark) .my {
-  /*@apply bg-bgPrimaryDark*/
-}

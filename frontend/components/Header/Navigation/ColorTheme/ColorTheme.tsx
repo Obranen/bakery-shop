@@ -18,8 +18,8 @@ const ColorTheme = () => {
   return (
     <Switch
       defaultSelected
-      size="lg"
-      color="default"
+      size="sm"
+      color="secondary"
       thumbIcon={({isSelected}) =>
         isSelected ?
           <>
