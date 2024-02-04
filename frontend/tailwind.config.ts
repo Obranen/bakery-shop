@@ -9,17 +9,26 @@ const config: Config = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    colors: {
-      myDefaultLight: '#fcfcfc',
-      myPrimaryLight: '#f5efe6',
-      mySecondaryLight: '#000000',
-      myHighlightLight: '#e05810',
-
-      myDefaultDark: '#fcfcfc',
-      myPrimaryDark: '#f5efe6',
-      mySecondaryDark: '#000000',
-      myHighlightDark: '#e05810',
+    container: {
+      center: true,
+      padding: '0'
     },
+    extend: {
+      screens: {
+        '3xl': '1640px'
+      },
+      colors: {
+        myDefaultLight: '#fcfcfc',
+        myPrimaryLight: '#f5efe6',
+        mySecondaryLight: '#000000',
+        myHighlightLight: '#e05810',
+  
+        myDefaultDark: '#fcfcfc',
+        myPrimaryDark: '#f5efe6',
+        mySecondaryDark: '#000000',
+        myHighlightDark: '#e05810',
+      },
+    }
   },
   darkMode: 'class',
   plugins: [
