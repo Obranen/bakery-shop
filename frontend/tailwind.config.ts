@@ -1,34 +1,36 @@
-import type {Config} from 'tailwindcss'
-import {nextui} from '@nextui-org/react'
+import { nextui } from '@nextui-org/react'
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
+    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     container: {
       center: true,
-      padding: '0'
     },
     extend: {
       screens: {
-        '3xl': '1640px'
+        '3xl': '1640px',
       },
       colors: {
         myDefaultLight: '#fcfcfc',
         myPrimaryLight: '#f5efe6',
         mySecondaryLight: '#000000',
         myHighlightLight: '#e05810',
-  
+
         myDefaultDark: '#fcfcfc',
         myPrimaryDark: '#f5efe6',
         mySecondaryDark: '#000000',
         myHighlightDark: '#e05810',
       },
-    }
+      fontFamily: {
+        abrilFatface: ['Abril_Fatface'],
+      },
+    },
   },
   darkMode: 'class',
   plugins: [
@@ -46,7 +48,7 @@ const config: Config = {
               foreground: '#fcfcfc',
               DEFAULT: '#e05810',
             },
-          }
+          },
         },
         dark: {
           colors: {
@@ -54,12 +56,12 @@ const config: Config = {
             foreground: 'white',
             primary: {
               DEFAULT: 'white',
-              foreground: 'black'
-            }
-          }
-        }
-      }
-    })
-  ]
+              foreground: 'black',
+            },
+          },
+        },
+      },
+    }),
+  ],
 }
 export default config

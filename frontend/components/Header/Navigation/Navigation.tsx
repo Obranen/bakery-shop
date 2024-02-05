@@ -16,15 +16,15 @@ const Navigation = () => {
       position='static'
       isBlurred={false}
       maxWidth={'full'}
-      className={'bg-opacity-0'}
+      className={'bg-opacity-0 flex'}
     >
-      <NavbarBrand>
+      <NavbarBrand className='w-4/12'>
         <Brand />
       </NavbarBrand>
-      <NavbarContent className='hidden sm:flex' justify='center'>
+      <NavbarContent className='hidden sm:flex w-4/12'>
         <FindSite />
       </NavbarContent>
-      <NavbarContent justify='end'>
+      <NavbarContent justify='end' className='w-4/12'>
         <ColorTheme />
         <NavbarItem isActive className='hidden lg:flex'>
           <Link href='#'>Увійти</Link>

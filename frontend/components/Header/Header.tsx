@@ -1,17 +1,16 @@
 import Image from 'next/image'
-// import {Image} from "@nextui-org/image"
 import Navigation from '@/components/Header/Navigation/Navigation'
 
 const Header = () => {
   return (
-    <div className={'bg-myPrimaryLight dark:bg-myPrimaryDark h-80'}>
+    <div className={'bg-myPrimaryLight dark:bg-myPrimaryDark'}>
       <Image
         src="/image/main/spikelet.jpg"
-        width={400}
-        height={0}
+        width={608}
+        height={327}
         alt="spikelet"
         priority
-        className={'absolute top-2 left-2 w-96'}
+        className={'absolute w-[608px] h-[327px]'}
       />
       <div className={'container'}>
         <Navigation/>

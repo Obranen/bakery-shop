@@ -5,10 +5,10 @@ const FindSite = () => {
   return (
     <Input
       classNames={{
-        base: 'max-w-full sm:max-w-[10rem] h-10',
-        mainWrapper: 'w-96',
-        input: 'text-small',
-        inputWrapper: 'h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20',
+        base: '',
+        mainWrapper: 'w-[80%] mx-auto',
+        input: '',
+        inputWrapper: '',
       }}
       placeholder="Я шукаю..."
       size="sm"
