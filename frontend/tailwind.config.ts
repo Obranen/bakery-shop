@@ -1,5 +1,3 @@
-import { localFont } from 'next/font/local';
-import { Abril_Fatface, Roboto_Serif } from 'next/font/google';
 import { nextui } from '@nextui-org/react'
 import type { Config } from 'tailwindcss'
 
