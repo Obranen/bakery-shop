@@ -6,7 +6,7 @@ const Brand = () => {
   return (
     <div className='mt-[100px] ml-[-15px] font-abrilFatface'>
       <Link
-        className='font-bold text-inherit border-t-2 border-myHighlightLight text-[28px]'
+        className='border-t-2 border-myHighlightLight text-[30px]'
         href='/'
       >
         <Image

@@ -1,3 +1,5 @@
+import { localFont } from 'next/font/local';
+import { Abril_Fatface, Roboto_Serif } from 'next/font/google';
 import { nextui } from '@nextui-org/react'
 import type { Config } from 'tailwindcss'
 
@@ -28,7 +30,10 @@ const config: Config = {
         myHighlightDark: '#e05810',
       },
       fontFamily: {
-        abrilFatface: ['Abril_Fatface'],
+        abrilFatface: ['var(--font-abrilFatface)'],
+        robotoSerifRegular: ['var(--font-robotoSerifRegular)'],
+        caveatRegular: ['var(--font-caveatRegular)'],
+        robotoRegular: ['var(--font-robotoRegular)'],
       },
     },
   },
