@@ -7,7 +7,7 @@ const FindSite = () => {
       classNames={{
         base: '',
         mainWrapper: 'w-[80%] mx-auto',
-        input: '',
+        input: 'font-robotoRegular text-[12px]',
         inputWrapper: '',
       }}
       placeholder="Я шукаю..."

@@ -1,0 +1,28 @@
+export interface INavItems {
+  id: string
+  href: string
+  title: string
+}
+
+export const navItems: INavItems[] = [
+  {
+    id: '1',
+    href: '#',
+    title: 'Увійти',
+  },
+  {
+    id: '2',
+    href: '/contact',
+    title: 'Контакти',
+  },
+  {
+    id: '3',
+    href: '/promotion',
+    title: 'Акції',
+  },
+  {
+    id: '4',
+    href: '#',
+    title: 'Кошик',
+  },
+]
