@@ -18,7 +18,7 @@ const Navigation = () => {
         <Brand />
       </NavbarBrand>
 
-      <NavbarContent className='hidden sm:flex w-4/12'>
+      <NavbarContent className='hidden sm:flex w-4/12 items-start'>
         <FindSite />
       </NavbarContent>
 

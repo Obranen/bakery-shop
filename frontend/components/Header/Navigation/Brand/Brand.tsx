@@ -4,9 +4,9 @@ import styles from './Brand.module.css'
 
 const Brand = () => {
   return (
-    <div className='mt-[100px] ml-[-15px] font-abrilFatface'>
+    <div className='mt-[100px] ml-[0px] font-abrilFatface'>
       <Link
-        className='border-t-2 border-myHighlightLight text-[30px]'
+        className='border-t-2 border-myHighlightLight text-[30px] inline-block mt-[-4px] pt-[3px]'
         href='/'
       >
         <Image
@@ -15,7 +15,7 @@ const Brand = () => {
           height={48}
           alt='bread'
           priority
-          className={'absolute top-[6px] left-[46px] w-[42px] h-[48px]'}
+          className={'absolute top-[6px] left-[38px] w-[42px] h-[48px]'}
         />
         <span className={styles.textGradient}>Bakery</span>
       </Link>
