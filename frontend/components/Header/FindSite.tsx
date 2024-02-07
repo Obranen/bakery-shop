@@ -1,8 +1,8 @@
 'use client'
 
-import { HiMagnifyingGlass } from 'react-icons/hi2'
 import { Input } from '@nextui-org/input'
 import { ChangeEvent, useState } from 'react'
+import { HiMagnifyingGlass } from 'react-icons/hi2'
 
 const FindSite = () => {
   const [textFind, setTextFind] = useState('')
@@ -14,6 +14,7 @@ const FindSite = () => {
 
   return (
     <div className='hidden sm:flex w-4/12 items-start'>
+      <button></button>
       <Input
         classNames={{
           base: '',
