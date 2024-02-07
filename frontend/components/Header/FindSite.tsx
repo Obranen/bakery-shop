@@ -14,7 +14,6 @@ const FindSite = () => {
 
   return (
     <div className='hidden sm:flex w-4/12 items-start'>
-      <button></button>
       <Input
         classNames={{
           base: '',
