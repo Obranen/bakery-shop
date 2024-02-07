@@ -1,33 +1,30 @@
 'use client'
 
-import { NavbarItem } from '@nextui-org/navbar'
+import { Button } from '@nextui-org/button'
 import {
   Dropdown,
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
 } from '@nextui-org/dropdown'
-import { Button } from '@nextui-org/button'
-import { MdOutlineBakeryDining, MdKeyboardArrowDown } from 'react-icons/md'
 import { GiCakeSlice, GiSlicedBread } from 'react-icons/gi'
+import { MdKeyboardArrowDown, MdOutlineBakeryDining } from 'react-icons/md'
 
 const ProductDropdown = () => {
   return (
     <Dropdown>
-      <NavbarItem>
-        <DropdownTrigger>
-          <Button
-            disableRipple
-            className='p-0 bg-transparent data-[hover=true]:bg-transparent font-robotoRegular font-black text-[14px]'
-            endContent={<MdKeyboardArrowDown size={20} />}
-            radius='sm'
-            variant='light'
-            color={'primary'}
-          >
-            Продукція
-          </Button>
-        </DropdownTrigger>
-      </NavbarItem>
+      <DropdownTrigger>
+        <Button
+          disableRipple
+          className='p-0 bg-transparent data-[hover=true]:bg-transparent font-robotoRegular font-black text-[14px]'
+          endContent={<MdKeyboardArrowDown size={20} />}
+          radius='sm'
+          variant='light'
+          color={'primary'}
+        >
+          Продукція
+        </Button>
+      </DropdownTrigger>
       <DropdownMenu
         aria-label='ACME features'
         className='w-[340px]'

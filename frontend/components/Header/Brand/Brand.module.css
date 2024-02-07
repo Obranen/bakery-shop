@@ -17,7 +17,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  line-height: 2rem;
-  transform: translateY(-2px);
   display: inline-block;
+  font-size: 30px;
 }

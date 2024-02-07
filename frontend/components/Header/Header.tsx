@@ -1,12 +1,16 @@
-import Navigation from '@/components/Header/Navigation/Navigation'
+import Brand from './Brand/Brand'
+import FindSite from './FindSite'
+import NavigationList from './NavigationList/NavigationList'
 
 const Header = () => {
   return (
-    <div className={'bg-myPrimaryLight dark:bg-myPrimaryDark'}>
-      <div className={'container'}>
-        <Navigation/>
+    <header className='bg-myPrimaryLight'>
+      <div className={'container flex relative z-[1]'}>
+        <Brand />
+        <FindSite />
+        <NavigationList />
       </div>
-    </div>
+    </header>
   )
 }
 

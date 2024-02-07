@@ -1,4 +1,10 @@
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Main page',
+}
 
 export default function Home() {
   return (
@@ -9,7 +15,7 @@ export default function Home() {
         height={327}
         alt="spikelet"
         priority
-        className={'absolute top-0 left-0 w-[608px] h-[327px]'}
+        className={'absolute top-0 left-0 w-[608px] h-[327px] z-0'}
       />
     </>
   )

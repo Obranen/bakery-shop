@@ -4,11 +4,8 @@ import styles from './Brand.module.css'
 
 const Brand = () => {
   return (
-    <div className='mt-[100px] ml-[0px] font-abrilFatface'>
-      <Link
-        className='border-t-2 border-myHighlightLight text-[30px] inline-block mt-[-4px] pt-[3px]'
-        href='/'
-      >
+    <div className='w-4/12 mt-[55px] font-abrilFatface'>
+      <Link href='/' className='inline-block'>
         <Image
           src='/image/main/bread.png'
           width={42}
@@ -17,6 +14,7 @@ const Brand = () => {
           priority
           className={'absolute top-[6px] left-[38px] w-[42px] h-[48px]'}
         />
+        <div className='w-full border-t-2 border-myHighlightLight translate-y-[6px]'></div>
         <span className={styles.textGradient}>Bakery</span>
       </Link>
     </div>
