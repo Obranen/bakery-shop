@@ -16,8 +16,12 @@ const ProductDropdown = () => {
       <DropdownTrigger>
         <Button
           disableRipple
-          className='p-0 bg-transparent data-[hover=true]:bg-transparent font-robotoRegular font-black text-[14px]'
-          endContent={<MdKeyboardArrowDown size={20} />}
+          className='p-0 mt-[-10px] bg-transparent data-[hover=true]:bg-transparent font-robotoRegular font-black text-[14px]'
+          endContent={
+            <span className='ml-[-10px] mr-[4px] inline-block after:content-["_|"]'>
+              <MdKeyboardArrowDown className='inline-block mr-[-4px]' size={20} />
+            </span>
+          }
           radius='sm'
           variant='light'
           color={'primary'}

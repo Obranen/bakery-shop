@@ -17,7 +17,7 @@ const NavigationItem: FC<INavigationItem> = ({ navItem, lastIndex, index }) => {
     >
       {navItem.title}
       {lastIndex - 1 !== index ? (
-        <span className='after:content-["_|_"]'></span>
+        <span className='after:content-["_|_"] ml-[2px]'></span>
       ) : (
         <></>
       )}
