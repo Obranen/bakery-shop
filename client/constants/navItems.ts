@@ -1,8 +1,4 @@
-export interface INavItems {
-  id: string
-  href: string
-  title: string
-}
+import { INavItems } from '@/interface/navigation.interface'
 
 export const navItems: INavItems[] = [
   {

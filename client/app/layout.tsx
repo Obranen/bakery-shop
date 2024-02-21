@@ -1,8 +1,8 @@
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
-import Provider from '@/lib/Provider'
+import ProviderLayout from '@/library/ProviderLayout'
 import { ReactNode } from 'react'
-import { useFontsHook } from '../hooks/useFontsHook'
+import { useFontsHook } from '../hook/useFonts.hook'
 import './globals.css'
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -14,13 +14,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${robotoSerifRegular.variable} ${abrilFatface.variable} ${caveatRegular.variable} ${robotoRegular.variable}`}
       >
-        <Provider>
+        <ProviderLayout>
           <div className={'body'}>
             <Header />
             <main>{children}</main>
             <Footer />
           </div>
-        </Provider>
+        </ProviderLayout>
       </body>
     </html>
   )
